@@ -1,12 +1,12 @@
 'use strict';
 
 
-// question 1
+// get username
 var username = prompt('Howdy pardner, what\'s your name?');
     alert('Nice to meet you, ' + username + '. Thanks for stopping in!');
     console.log('The user responded with ' + username + ' when asked their name.');
 
-// question 2
+// question 1
 var knowMe = prompt('Whattya think... wanna get to know me a little better?').toLowerCase();
     if (knowMe  === 'yes' || knowMe === 'y') {
     alert('Right on ' + username + ', I make it my goal to reach out for new friends in my life so please, ask me something else!');
@@ -16,7 +16,7 @@ var knowMe = prompt('Whattya think... wanna get to know me a little better?').to
         console.log('The user did not chose wisely'); 
 }
 
-// question 3
+// question 2
 var exercise = prompt('How about my physique there ' + username + '?... does my profile photo give you the impression I exercise on a regular basis?').toLowerCase();
     if (exercise === 'yes' || knowMe ==='y') {
     alert('Good eye ' + username + '. I have put oodles & oodles of time into my 12oz biceps curls!');
@@ -26,7 +26,7 @@ var exercise = prompt('How about my physique there ' + username + '?... does my 
         console.log('The user did not answer correctly');
 }
 
-// question 4
+// question 3
 var favColor = prompt('Speaking of my profile photo, do I seem like someone who\'s favorite color might be hot pink?').toLowerCase();
     if (favColor === 'no' || favColor === 'n') {
     alert('Whew! Nothing against those who prefer hot pink, but actually, BLUE is where it\'s at for me.');
@@ -36,7 +36,7 @@ var favColor = prompt('Speaking of my profile photo, do I seem like someone who\
         console.log('The user did not answer correctly');
 }
 
-// question 5
+// question 4
 var university = prompt('Hey ' + username + ', does anything you\'ve learned about me so far indicate I might have gone to a university?').toLowerCase();
     if (university === 'no' || university === 'n') {
     alert('Good job ' + username + '! It looks like you dug a little deeper into my profile than just my awesome photo!');
@@ -46,7 +46,7 @@ var university = prompt('Hey ' + username + ', does anything you\'ve learned abo
         console.log('The user did not answer correctly');
 }
 
-//question 6
+//question 5
 var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
     if (compKnowledge === 'yes' || compKnowledge === 'y') {
     alert('Fantastic, ' + username + '! I really appreciate you spending extra time getting to know me. How about a meetup sometime? I\'ll be buying the coffee!');
