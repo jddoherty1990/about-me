@@ -5,19 +5,22 @@ var username = prompt('Howdy pardner, what\'s your name?');
     alert('Nice to meet you, ' + username + '. Thanks for stopping in!');
     console.log('The user responded with ' + username + ' when asked their name.');
 
-// question 1
-var knowMe = prompt('Whattya think... wanna get to know me a little better?').toLowerCase();
-    if (knowMe  === 'yes' || knowMe === 'y') {
-    alert('Right on ' + username + ', I make it my goal to reach out for new friends in my life so please, ask me something else!');
-    console.log('The user chose wisely');
-    }   else {
-        alert('Hmm...I really think you should stick around ' + username + ' and I think I might be able to sway you over to the dark side... HA HA HAAA!!!');
-        console.log('The user did not chose wisely'); 
+function questionOne() {
+        // question 1
+        var knowMe = prompt('Whattya think... wanna get to know me a little better?').toLowerCase();
+        if (knowMe  === 'yes' || knowMe === 'y') {
+        alert('Right on ' + username + ', I make it my goal to reach out for new friends in my life so please, ask me something else!');
+        console.log('The user chose wisely');
+        }   else {
+                alert('Hmm...I really think you should stick around ' + username + ' and I think I might be able to sway you over to the dark side... HA HA HAAA!!!');
+                console.log('The user did not chose wisely'); 
+        }
 }
+questionOne();
 
 // question 2
 var exercise = prompt('How about my physique there ' + username + '?... does my profile photo give you the impression I exercise on a regular basis?').toLowerCase();
-    if (exercise === 'yes' || knowMe ==='y') {
+    if (exercise === 'yes' || exercise ==='y') {
     alert('Good eye ' + username + '. I have put oodles & oodles of time into my 12oz biceps curls!');
     console.log('The user answered correctly');
     }   else {
