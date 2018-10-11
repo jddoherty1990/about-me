@@ -1,6 +1,5 @@
 'use strict';
 
-
 // get username
 var username = prompt('Howdy pardner, what\'s your name?');
     alert('Nice to meet you, ' + username + '. Thanks for stopping in!');
@@ -41,19 +40,28 @@ var university = prompt('Hey ' + username + ', does anything you\'ve learned abo
     if (university === 'no' || university === 'n') {
     alert('Good job ' + username + '! It looks like you dug a little deeper into my profile than just my awesome photo!');
     console.log('The user answered correctly');
-    }    else {
+    }   else {
         alert('Well, actually ' + username + ', I did graduate from high school and complete some junior college courses but did not attend university.');
         console.log('The user did not answer correctly');
 }
 
-//question 5
+// question 5
 var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
     if (compKnowledge === 'yes' || compKnowledge === 'y') {
     alert('Fantastic, ' + username + '! I really appreciate you spending extra time getting to know me. How about a meetup sometime? I\'ll be buying the coffee!');
     console.log('The user answered correctly');
-    }    else {
+    }   else {
         alert('Wowee! I\'m so sorry if my skills are somehow lacking. I will look a lot closer to see where I can improve. Please feel free to contact me if you have any suggestions!');
         console.log('The user answered incorrectly');
 }
 
-
+// question 6: user guesses my lowest 18-hole golfing score (answer = 77)
+var myLowScore = 77;
+var guessScore = prompt('Let\'s have a little fun now, ' + username + '. Golf is my favorite sport, so what do you think my lowest, 18-hole golf score is?').toLowerCase();
+    if (guessScore < myLowScore && guessScore !== myLowScore) {
+    alert('Nope, I\'m afraid that is too low. Please try again.');
+    console.log('User guessed too low');
+    }   else { 
+        alert('Nope, that is too high. Please try again.');
+        console.log('User guessed too high');
+}
