@@ -70,21 +70,24 @@ function questionFive() {
 }
 questionFive();
 
-// question 6: user gets only 4 chances to guess my lowest 18-hole golfing score (answer = 77) 
-var myLowScore = 77;
-var numGuesses = 4;
-for (var i = 0; i < 4; i++) {
-        var guessScore = prompt('Let\'s have a little fun now, ' + username + '. Golf is my favorite sport, so what do you think my lowest, 18-hole golf score is?').toLowerCase();
-     
+function questionSix() {
+        // question 6: user gets only 4 chances to guess my lowest 18-hole golfing score (answer = 77) 
+        var myLowScore = 77;
+        var numGuesses = 4;
+        for (var i = 0; i < 4; i++) {
+                var guessScore = prompt('Let\'s have a little fun now, ' + username + '. Golf is my favorite sport, so what do you think my lowest, 18-hole golf score is?').toLowerCase();
         
-        if (guessScore < myLowScore /*&& guessScore !== myLowScore*/) {
-                alert('Nope, I\'m afraid that is too low. Please try again.');
-                console.log('User guessed too low');
-        }else if(guessScore > myLowScore) { 
-                alert('Nope, that is too high. Please try again.');
-                console.log('User guessed too high');
-        } else{
-                alert('CORRECT');
-                break;
+                
+                if (guessScore < myLowScore /*&& guessScore !== myLowScore*/) {
+                        alert('Nope, I\'m afraid that is too low. Please try again.');
+                        console.log('User guessed too low');
+                }else if(guessScore > myLowScore) { 
+                        alert('Nope, that is too high. Please try again.');
+                        console.log('User guessed too high');
+                } else{
+                        alert('CORRECT');
+                        break;
+                }
         }
 }
+questionSix();
