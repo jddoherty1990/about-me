@@ -57,15 +57,18 @@ function questionFour() {
 }
 questionFour();
 
-// question 5
-var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
-    if (compKnowledge === 'yes' || compKnowledge === 'y') {
-    alert('Fantastic, ' + username + '! I really appreciate you spending extra time getting to know me. How about a meetup sometime? I\'ll be buying the coffee!');
-    console.log('The user answered correctly');
-    }   else {
-        alert('Wowee! I\'m so sorry if my skills are somehow lacking. I will look a lot closer to see where I can improve. Please feel free to contact me if you have any suggestions!');
-        console.log('The user answered incorrectly');
+function questionFive() {
+        // question 5
+        var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
+        if (compKnowledge === 'yes' || compKnowledge === 'y') {
+        alert('Fantastic, ' + username + '! I really appreciate you spending extra time getting to know me. How about a meetup sometime? I\'ll be buying the coffee!');
+        console.log('The user answered correctly');
+        }   else {
+                alert('Wowee! I\'m so sorry if my skills are somehow lacking. I will look a lot closer to see where I can improve. Please feel free to contact me if you have any suggestions!');
+                console.log('The user answered incorrectly');
+        }
 }
+questionFive();
 
 // question 6: user gets only 4 chances to guess my lowest 18-hole golfing score (answer = 77) 
 var myLowScore = 77;
