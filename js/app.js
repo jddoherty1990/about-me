@@ -44,15 +44,18 @@ function questionThree() {
 }
 questionThree();
 
-// question 4
-var university = prompt('Hey ' + username + ', does anything you\'ve learned about me so far indicate I might have gone to a university?').toLowerCase();
-    if (university === 'no' || university === 'n') {
-    alert('Good job ' + username + '! It looks like you dug a little deeper into my profile than just my awesome photo!');
-    console.log('The user answered correctly');
-    }   else {
-        alert('Well, actually ' + username + ', I did graduate from high school and complete some junior college courses but did not attend university.');
-        console.log('The user did not answer correctly');
+function questionFour() {
+        // question 4
+        var university = prompt('Hey ' + username + ', does anything you\'ve learned about me so far indicate I might have gone to a university?').toLowerCase();
+        if (university === 'no' || university === 'n') {
+        alert('Good job ' + username + '! It looks like you dug a little deeper into my profile than just my awesome photo!');
+        console.log('The user answered correctly');
+        }   else {
+                alert('Well, actually ' + username + ', I did graduate from high school and complete some junior college courses but did not attend university.');
+                console.log('The user did not answer correctly');
+        }
 }
+questionFour();
 
 // question 5
 var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
