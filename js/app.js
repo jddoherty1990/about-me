@@ -18,25 +18,31 @@ function questionOne() {
 }
 questionOne();
 
-// question 2
-var exercise = prompt('How about my physique there ' + username + '?... does my profile photo give you the impression I exercise on a regular basis?').toLowerCase();
-    if (exercise === 'yes' || exercise ==='y') {
-    alert('Good eye ' + username + '. I have put oodles & oodles of time into my 12oz biceps curls!');
-    console.log('The user answered correctly');
-    }   else {
-        alert('Oh my... I guess we should hit the gym together sometime soon!');
-        console.log('The user did not answer correctly');
+function questionTwo() {
+        // question 2
+        var exercise = prompt('How about my physique there ' + username + '?... does my profile photo give you the impression I exercise on a regular basis?').toLowerCase();
+        if (exercise === 'yes' || exercise ==='y') {
+        alert('Good eye ' + username + '. I have put oodles & oodles of time into my 12oz biceps curls!');
+        console.log('The user answered correctly');
+        }   else {
+                alert('Oh my... I guess we should hit the gym together sometime soon!');
+                console.log('The user did not answer correctly');
+        }
 }
+questionTwo();
 
-// question 3
-var favColor = prompt('Speaking of my profile photo, do I seem like someone who\'s favorite color might be hot pink?').toLowerCase();
-    if (favColor === 'no' || favColor === 'n') {
-    alert('Whew! Nothing against those who prefer hot pink, but actually, BLUE is where it\'s at for me.');
-    console.log('The user answered correctly');
-    }   else {
-        alert('Interesting you would think that ' + username + ' but actually, BLUE is where it\'s at for me.');
-        console.log('The user did not answer correctly');
+function questionThree() {
+        // question 3
+        var favColor = prompt('Speaking of my profile photo, do I seem like someone who\'s favorite color might be hot pink?').toLowerCase();
+        if (favColor === 'no' || favColor === 'n') {
+        alert('Whew! Nothing against those who prefer hot pink, but actually, BLUE is where it\'s at for me.');
+        console.log('The user answered correctly');
+        }   else {
+                alert('Interesting you would think that ' + username + ' but actually, BLUE is where it\'s at for me.');
+                console.log('The user did not answer correctly');
+        }
 }
+questionThree();
 
 // question 4
 var university = prompt('Hey ' + username + ', does anything you\'ve learned about me so far indicate I might have gone to a university?').toLowerCase();
