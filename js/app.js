@@ -1,91 +1,95 @@
 'use strict';
 
 // get username
-var username = prompt('Howdy pardner, what\'s your name?');
+var username = prompt('GREETINGS and WELCOME to my profile page! Please enter your first name here...');
     alert('Nice to meet you, ' + username + '. Thanks for stopping in!');
     console.log('The user responded with ' + username + ' when asked their name.');
 
-function questionOne() {
-        // question 1
-        var knowMe = prompt('Whattya think... wanna get to know me a little better?').toLowerCase();
+// query if user has a few minutes
+var knowMe = prompt('Pull up a chair, ' + username + ' and get comfy. I have prepared a brief, fun game for us to play so that you can get to know me a little better. Do you have a couple of minutes to spare?').toLowerCase();
         if (knowMe  === 'yes' || knowMe === 'y') {
-        alert('Right on ' + username + ', I make it my goal to reach out for new friends in my life so please, ask me something else!');
-        console.log('The user chose wisely');
-        }   else {
-                alert('Hmm...I really think you should stick around ' + username + ' and I think I might be able to sway you over to the dark side... HA HA HAAA!!!');
-                console.log('The user did not chose wisely'); 
+        alert('GREAT, ' + username + '!!! Thanks for sticking around, let\'s get started...');
+        console.log('The user said yes');
+        } else {  
+        var goodBye = prompt('BUMMER!! I really hate to see you go, ' + username + '. Are you sure you can\'t stay even just a little gigabyte longer?').toLowerCase();
+        } if (goodBye === 'yes' || goodBye === "y") {
+                
+        // alert('Sorry to see you go, ' + username + '. Please come back soon and we will do this again!');
+        // console.log('The user answered yes');
+        }           
+ 
+// game question 1: about-me physical fitness
+function questionOne() {
+var exercise = prompt('How does my profile photo look to you, ' + username + '?... do you think I\'m a a bit of a couch potato? ;-)').toLowerCase();
+        if (exercise === 'no' || exercise ==='n') {
+        alert('Good eye, ' + username + '! I have put oodles & oodles of time into my 12oz, biceps curls..... KIDDING!!! But seriously, I really do enjoy a quality craft beer on occssion in conjunction with a healthy lifestyle but I never, EVER overindulge in alchohol..... not kidding on that count! :-)');
+        console.log('The user answered correctly');
+        } else {
+                alert('Oh my... I guess I need to hit the gym a little harder real soon!');
+                console.log('The user did not answer correctly');
+                }
         }
-}
 questionOne();
 
-function questionTwo() {
-        // question 2
-        var exercise = prompt('How about my physique there ' + username + '?... does my profile photo give you the impression I exercise on a regular basis?').toLowerCase();
-        if (exercise === 'yes' || exercise ==='y') {
-        alert('Good eye ' + username + '. I have put oodles & oodles of time into my 12oz biceps curls!');
+// game question 2: about-me fav color
+function questionTwo() {    
+        var favColor = prompt('Speaking of my profile photo, ' + username + ', do I seem like someone who\'s favorite color might be hot pink?').toLowerCase();
+        if (favColor === 'no' || favColor === 'n') {
+        alert('Whew! Nothing against those who prefer hot pink, but actually, BLUE is where it\'s at for me.');
         console.log('The user answered correctly');
-        }   else {
-                alert('Oh my... I guess we should hit the gym together sometime soon!');
+        } else {
+                alert('Interesting you would think that, ' + username + '. Actually, BLUE is where it\'s at for me.');
                 console.log('The user did not answer correctly');
         }
 }
 questionTwo();
 
-function questionThree() {
-        // question 3
-        var favColor = prompt('Speaking of my profile photo, do I seem like someone who\'s favorite color might be hot pink?').toLowerCase();
-        if (favColor === 'no' || favColor === 'n') {
-        alert('Whew! Nothing against those who prefer hot pink, but actually, BLUE is where it\'s at for me.');
+// game question 3: about-me education
+function questionThree() {        
+        var university = prompt('Hey ' + username + ', does anything you\'ve learned about me so far indicate I might have gone to a university?').toLowerCase();
+        if (university === 'no' || university === 'n') {
+        alert('Good job ' + username + '! It looks like you dug a little deeper into my profile than just my awesome photo! I graduated from a small town high school in Central California and then followed that up with some junior college courses, but I did not pursue a university education. You should really continue on to the next game question to find out my story from there...');
         console.log('The user answered correctly');
-        }   else {
-                alert('Interesting you would think that ' + username + ' but actually, BLUE is where it\'s at for me.');
+        } else {
+                alert('Well, actually ' + username + ', I graduated from a small town high school in Central California and then followed that up with some junior college courses, but I did not pursue a university education. You should really continue on to the next game question to find out the story from there...');
                 console.log('The user did not answer correctly');
         }
 }
 questionThree();
 
-function questionFour() {
-        // question 4
-        var university = prompt('Hey ' + username + ', does anything you\'ve learned about me so far indicate I might have gone to a university?').toLowerCase();
-        if (university === 'no' || university === 'n') {
-        alert('Good job ' + username + '! It looks like you dug a little deeper into my profile than just my awesome photo!');
+// game question 4: about-me comp dev competence
+function questionFour() {        
+        var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
+        if (compKnowledge === 'yes' || compKnowledge === 'y') {
+        alert('Fantastic, ' + username + '! I really appreciate your positive feedback but am always looking for ways to improve my skills. Would you be willing to give me some constructive feedback? How about a meetup over coffee sometime, my treat? If so, please feel free to contact me, it\'d be great to meet you in person!');
         console.log('The user answered correctly');
-        }   else {
-                alert('Well, actually ' + username + ', I did graduate from high school and complete some junior college courses but did not attend university.');
-                console.log('The user did not answer correctly');
+        } else {
+                alert('Wowee! I\'m so sorry if my skills are somehow lacking. I will look closer to see where I can improve. Please feel free to contact me if you have any suggestions or constructive feedback! How about a meetup over coffee sometime, my treat? If so, please feel free to contact me, it\'d be great to meet you in person!');
+                console.log('The user answered incorrectly');
         }
 }
 questionFour();
 
+// game question 5: about-me CDL for 30 years
 function questionFive() {
-        // question 5
-        var compKnowledge = prompt('Now the important stuff... Does the appearance of my web page give you any reason to believe I know anything about computer programming?').toLowerCase();
-        if (compKnowledge === 'yes' || compKnowledge === 'y') {
-        alert('Fantastic, ' + username + '! I really appreciate you spending extra time getting to know me. How about a meetup sometime? I\'ll be buying the coffee!');
-        console.log('The user answered correctly');
-        }   else {
-                alert('Wowee! I\'m so sorry if my skills are somehow lacking. I will look a lot closer to see where I can improve. Please feel free to contact me if you have any suggestions!');
-                console.log('The user answered incorrectly');
-        }
+        var truckDriver = prompt('')
 }
 questionFive();
 
-function questionSix() {
-        // question 6: user gets only 4 chances to guess my lowest 18-hole golfing score (answer = 77) 
+// question 6: user gets only 4 chances to guess my lowest 18-hole golfing score (answer = 77)
+function questionSix() {         
         var myLowScore = 77;
         var numGuesses = 4;
         for (var i = 0; i < 4; i++) {
-                var guessScore = prompt('Let\'s have a little fun now, ' + username + '. Golf is my favorite sport, so what do you think my lowest, 18-hole golf score is?').toLowerCase();
-        
-                
-                if (guessScore < myLowScore /*&& guessScore !== myLowScore*/) {
+                var guessScore = prompt('Let\'s have a little fun now, ' + username + '. Here\'s a guessing game about me... Golf is my favorite sport.  What do you think my lowest, 18-hole golf score is? (hint: the correct answer lies somewhere between 50 and 100)... I\'ll give you exactly four tries to answer correctly. READY, SET GO!').toLowerCase();
+        if (guessScore < myLowScore /*&& guessScore !== myLowScore*/) {
                         alert('Nope, I\'m afraid that is too low. Please try again.');
                         console.log('User guessed too low');
-                }else if(guessScore > myLowScore) { 
+        } else if(guessScore > myLowScore) { 
                         alert('Nope, that is too high. Please try again.');
                         console.log('User guessed too high');
-                } else{
-                        alert('CORRECT');
+          } else {
+                        alert('CORRECT, you aced it, ' + username + '! You\'re on a roll, so don\'t stop now...one more question to go!');
                         break;
                 }
         }
